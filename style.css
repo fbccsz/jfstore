@@ -1,0 +1,102 @@
+* {
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px){
+    * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+}
+.logo {
+    border-radius: 50%;
+    width: 25vh;
+    margin-top: 3vh;
+}
+
+.nomedaloja {
+    color: rgb(39, 87, 198);
+    font-size: 8vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.desc {
+    font-size: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3vh;
+    animation: mudar-cor 3s infinite ease-in-out;
+}
+
+@keyframes mudar-cor {
+        0% { color: red; }       /* No início, a cor é vermelha */
+        33% { color: blue; }     /* Após 33% do tempo, a cor é azul */
+        66% { color: green; }    /* Após 66% do tempo, a cor é verde */
+        100% { color: red; }     /* No final, volta a ser vermelha */
+    }
+
+.primeiromenu {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imgprimenu {
+    max-width: 15vh;
+    height: auto;
+    border-radius: 50vh;
+    border-style: solid;
+    border-color: rgb(16, 126, 126);
+    margin: 1vh;
+}
+
+.linhavertical {
+    width: 100%;
+    border: 1px solid;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    animation: mudar-cor 3s infinite ease-in-out;
+}
+
+.teste {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imagemmenu2 {
+    width: 5vh;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.produtos > div {
+  margin: 10px;
+  line-height: 75px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color: rgb(54, 33, 148);
+}
+
+
+
